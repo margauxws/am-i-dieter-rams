@@ -1,7 +1,86 @@
 
 body{
   font-family: Glacial Indifference, sans-serif;
-  text-align: center;
+  align-items: center;
+  justify-content:center;
   vertical-align: center;
+  height:100%; width: 100%;
+  display: flex;
+  z-index:0;
+  background-color: #F2EEE9;
 }
-.right
+#background{
+  z-index:-1;
+  background-color: red;
+  with:100%;height:100%;
+  position:fixed;
+}
+.sidebar {
+  max-width: 30%;
+  float: left;
+  position: absolute; left: 20px;
+  vertical align-center;
+  height: 100%;
+  margin: auto;
+  z-index:1;
+  }
+    .topfiller {
+    align-self: flex-start;
+    margin: auto;
+    max-height: 30%;
+    height: 25%;
+  }
+  .title:hover {
+    opacity: 50%;
+  }
+  .title {
+    max-width: 30%;
+    margin: auto;
+  }
+  .bottomfiller {
+    align-self: flex-end;
+    margin: auto;
+    max-height: 30%;
+  }
+.rightsquare {
+  margin-top:10%;
+  display: flex;
+  height: 500px; width: 500px;
+  background-color: white;
+  position: absolute;
+  float:right;
+  right: 70px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+  .Braun-T31{
+    height: 100px; width: 100px;
+    order: 1;
+    flex-basis:100px;
+    indent: -9999px;
+  }
+    #Braun-T31{
+      clip: rect(0px,100px,0px,100px);
+    }
+    .Braun-T31: hover{
+      indent: 0px;
+    }
+  .coffeemaker{
+    height: 100px; width: 100px;
+    order: 2;
+  }
+    #coffeemaker {
+    clip: rect(0px,100px,0px,100px);
+    }
+h1 {
+  color:black;
+  font-size: 40px;
+  line-height:50px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 20px;
+}
