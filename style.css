@@ -75,7 +75,27 @@ body{
       indent: 0px;
       z-index: 2;
     }
-
+    .span{
+      position: relative;
+      left:220px; top: 90px;
+      width: 50px;height:50px;
+      background color:red;
+      margin: auto;
+      z-index: 4;
+    }
+  .button{
+    position: relative;
+    left:220px; top: 90px;
+    width: 50px;height:50px;
+    background color:red;
+    margin: auto;
+    z-index: 4;
+  }
+.Station1{
+  position: absolute;
+    width: 50px;height:50px;
+    top: 300px; left: 320px;
+}
 
 h1 {
   color:black;
