@@ -80,6 +80,7 @@ body{
       z-index: 2;
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     span{
       position: absolute;
       left:460px; top: 10px;
@@ -123,6 +124,8 @@ body{
     z-index: 4;
   }
 =======
+=======
+>>>>>>> Stashed changes
   .button{
     position: relative;
     left:220px; top: 90px;
@@ -137,6 +140,9 @@ body{
     top: 300px; left: 330px;
 }
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 h1 {
   color:black;
