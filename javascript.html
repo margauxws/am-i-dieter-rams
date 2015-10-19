@@ -6,15 +6,13 @@
   <script type="text/javascript"> </script>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
 <style>
-​   nav {
+​  nav {
     display:none;
    }
    .static {
        display:block;
    }
-   .encloser {
-     display: none;
-   }
+
    .background2{
      display: block;
    }
@@ -27,17 +25,18 @@
         $(".button").click(function(){
             console.log("you clicked on Braun-T31");
             $('nav').addClass('static');
+            console.log("you added static class")
         });
-        $("ul li.Station1").click(function(){
+    $("ul li.Station1").click(function(){
             console.log("you clicked on Station 1!");
               var audioElement=document.createElement('audio');
                 console.log("you created an element!");
                   audioElement.setAttribute('src', 'http://berlincommunityradio.out.airtime.pro:8000/berlincommunityradio_b');
                   audioElement.autoplay = true;
-                  if (audioElement.autoplay = true)
+        });
     $("ul li.Station2").click(function(){
             console.log("you clicked on Station 2");
-            $('stations').removeClass("ul li.Station1.audio");
+            $('ul stations').removeClass("ul li.Station1.audio");
             console.log("you removed Station 1");
         });
     $("ul li.Station3").click(function(){
@@ -47,9 +46,8 @@
         });
     $('span').click(function(){
             console.log("You clicked on the close button")});
-        $('nav').removeClass('static');
+            $('nav').removeClass('static');
       });
-  });
       </script>
   <title> am i dieter rams ? </title>
 </head>
@@ -68,19 +66,19 @@
 <nav>
     <h4> Braun-T31 </h4>
     <img src="Braun.jpg" id="Braun-T31" style="width:300px;"> </img>
-      <div class="static" id="static"></div>
+  <div class="static" id="static">
     <ul class="stations">
-      <li class="Station1"></li
-      <div class="encloser">
-        <audio id="audio">
-          <source src="http://berlincommunityradio.out.airtime.pro:8000/berlincommunityradio_b" acc id="sound">
-          </audio>
-        </div>
+      <li class="Station1"></li>
+            <audio id="audio">
+              <source src="http://berlincommunityradio.out.airtime.pro:8000/berlincommunityradio_b" acc id="sound">
+            </audio>
       <li class="Station2"></li>
         <li class="background2"></li>
+          <img src="background2.jpg" style="width:300px;"></img>
       <li class="Station3"></li>
         <li class="background3"></li>
     </ul>
+  </div>
   </nav>
   <span> </span>
   </div>
