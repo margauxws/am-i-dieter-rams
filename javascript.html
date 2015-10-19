@@ -3,10 +3,34 @@
 <head>
   <link rel="stylesheet" media="screen" href="style.css">
   <title>JS</title>
-  <script type="text/javascript">
+  <script type="text/javascript"> </script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+<style>
+​   nav {
+     display:none;
+    }
+    .static {
+     display:block;
+    }
+</style>
+<script>
   $(document).ready(function(){
-      $(".radio").click
-    $("#Braun-T31").onclick
+  ​  $(".rightsquare").click(function(){
+            console.log("you clicked on Braun-T31");
+            $("nav").addClass("static");
+          });
+          $("li:Station1").click(function(){
+            console.log("you clicked on the first list item!");
+            alert("yay!");
+          });
+          $("li:Station2").click(function(){
+            console.log("you clicked on the last list item!");
+          });
+  ​         $("span").click(function(){
+            console.log("you clicked on the close button!");
+            $("nav").removeClass("static");
+          });
+        });
   </script>
   <title> am i dieter rams ? </title>
 </head>
@@ -21,22 +45,20 @@
 </div>
 
 <div class="rightsquare" id="grid">
-  <div class="Braun-T31">
+<nav>
     <h4> Braun-T31 </h4>
-    <img src="Braun.jpg" id="Braun-T31" style="width:100px;"> </img>
-      <div class="radio" id="static"></div>
-      <div class="radio" id="silence"></div>
-    <div class="info"> Created by Dieter Rams in 1958. </div>
+    <img src="Braun.jpg" id="Braun-T31" style="width:300px;"> </img>
+      <div class="static" id="static"></div>
+    <ul class="stations"
+      <li class="Station1"> </li>
+      <li class="Station2"></li>
+      <li class="Station3"></li>
+    </ul>
+  </nav>
+  <span> close nav </span>
   </div>
-  <div class="coffeemaker" id="aromasterkf21">
-    <h4> kf 21 aromaster </h4>
-    <img src="kf21.jpg" id="coffeemaker" style="width: 100px;"> </img>
-  </div>
-  <div class="radio">
-    <img src="radio.jpg" id="BraunRadio" style="width:100px"; </img>
+
 </div>
-<div class="watch">
-  <img src="watch.jpg" id="BraunWatch" style="width:100px"; </img>
-</div>
+
 </body>
 </html>
